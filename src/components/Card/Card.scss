@@ -1,0 +1,45 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 265px;
+        height: 320px;
+        background: $dark;
+        div {
+            max-width: 200px;
+            height: 250px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: $white-text;
+            padding: 7% 0;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        @media (max-width: 576px) {
+            height: 300px;
+            div {
+                height: 230px;
+            }
+        }
+        @media (max-width: 375px) {
+            height: 280px;
+            div {
+                height: 220px;
+            }
+            img{
+                max-width: 90%;
+            }
+        }
+    }
+}
