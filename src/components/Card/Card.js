@@ -1,5 +1,5 @@
-// import styled from "styled-components";
 import './Card.scss';
+import { NavLink } from "react-router-dom";
 
 const Card = (props) => {
 
@@ -7,9 +7,9 @@ const Card = (props) => {
         <div className="app__card">
             <div>
                 <img src={props.image} alt=''></img>
-                <p>
+                <NavLink className='app__card_link' exact activeStyle={{'color': '#1DC985'}} to="/character"><p>
                     {props.cardName}
-                </p>
+                </p></NavLink>
             </div>
         </div>
     )

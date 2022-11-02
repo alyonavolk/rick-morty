@@ -15,9 +15,9 @@ function App() {
     <Router>
       <div className="app">
       <HeaderMenu />
+      <Banner />
           <Switch>
             <Route exact path="/">
-              <Banner />
               <Search />
               <div className='app__cards'>
                 <Card image={morty} cardName='Morty Smith' /> 
@@ -30,7 +30,9 @@ function App() {
               <Route exact path="/episode">
             </Route>
             <Route exact path="/character">
-              <Profile prof_img={morty} prof_name='Summer Smith' />
+              <div className='app__char'><Profile prof_img={summer} prof_name='Summer Smith' 
+              prof_gen='Female' prof_loc='Earth (Replacement Dimension)'
+              prof_stat='Alive'/></div>
             </Route>
           </Switch>
       </div>

@@ -8,18 +8,21 @@
         width: 265px;
         height: 320px;
         background: $dark;
+        text-align: center;
         div {
             max-width: 200px;
             height: 250px;
         }
-        p{
+        &_link{
             font-style: normal;
             font-weight: 700;
             font-size: 22px;
             line-height: 26px;
-            text-align: center;
             color: $white-text;
             padding: 7% 0;
+            :hover{
+                color: $main-color;
+            }
         }
         img{
             display: block;
